@@ -67,4 +67,33 @@
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 	};
+	
+	combos {
+		compatible = "zmk,combos";
+		combo_copy {
+		    timeout-ms = <50>;
+		    key-positions = <38 38>;
+		    bindings = <&kp C_AC_COPY>;
+		};
+		combo_cut {
+		    timeout-ms = <50>;
+		    key-positions = <37 37>;
+		    bindings = <&kp C_AC_CUT>;
+		};
+		combo_paste {
+		    timeout-ms = <50>;
+		    key-positions = <21 21>;
+		    bindings = <&kp C_AC_PASTE>;
+		};
+		combo_undo {
+		    timeout-ms = <50>;
+		    key-positions = <18 18>;
+		    bindings = <&kp C_AC_UNDO>;
+		};
+		combo_redo {
+		    timeout-ms = <50>;
+		    key-positions = <15 15>;
+		    bindings = <&kp C_AC_REDO>;
+		};
+	    };
 };
